@@ -48,9 +48,13 @@ $(document).ready(function() {
     });
   });
 
-  $("img#dog").click(function() {
+    $("img#dog").click(function() {
     $("ul#user").prepend("<li>meow</li>");
     $("ul#webpage").prepend("<li>bork</li>");
+    $("ul#webpage").after("<img src='img/dog2.jpeg'>");
+    $("ul#webpage").siblings("img").first().click(function() {
+      $(this).remove();
+    });
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
