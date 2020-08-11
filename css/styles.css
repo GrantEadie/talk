@@ -1,3 +1,15 @@
 .purple-background {
   background-color: purple;
 }
+
+h1 {
+  border: solid black;
+  border-width: 2px;
+  text-align: center;
+}
+
+.fitter {
+  object-fit: cover; 
+  height: 100px; 
+  width: 100px; 
+}

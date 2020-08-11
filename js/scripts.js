@@ -35,4 +35,28 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
+  $("img#cat").click(function() {
+    $("ul#user").prepend("<li>meow</li>");
+    $("ul#webpage").prepend("<li>bork</li>");
+    $("ul#user").children("li").first().click(function() {
+      $(this).remove();
+    });
+
+    $("ul#webpage").children("li").first().click(function() {
+      $(this).remove();
+    });
+  });
+
+  $("img#dog").click(function() {
+    $("ul#user").prepend("<li>meow</li>");
+    $("ul#webpage").prepend("<li>bork</li>");
+    $("ul#user").children("li").first().click(function() {
+      $(this).remove();
+    });
+
+    $("ul#webpage").children("li").first().click(function() {
+      $(this).remove();
+    });
+  });
 });
